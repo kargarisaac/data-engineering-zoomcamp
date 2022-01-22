@@ -12,6 +12,12 @@ The last video (setting up the environment) is optional, but you can check it ea
 if you have troubles setting up the environment and following along the videos.
 
 
+We suggest to watch the videos in the same order as in this document.
+
+The last video (setting up the environment) is optional, but you can check it earlier 
+if you have troubles setting up the environment and following along the videos.
+
+
 ### Docker + Postgres
 
 [Code](2_docker_sql)
