@@ -6,7 +6,7 @@ Note: My blog post about this week can be found [here](https://kargarisaac.githu
 -   [Slides](https://www.slideshare.net/AlexeyGrigorev/data-engineering-zoomcamp-introduction)
 -   Overview of [Architecture](https://github.com/DataTalksClub/data-engineering-zoomcamp#overview), [Technologies](https://github.com/DataTalksClub/data-engineering-zoomcamp#technologies) & [Pre-Requisites](https://github.com/DataTalksClub/data-engineering-zoomcamp#prerequisites)
 
-We suggest to watch the videos in the same order as in this document.
+We suggest watching videos in the same order as in this document.
 
 The last video (setting up the environment) is optional, but you can check it earlier
 if you have troubles setting up the environment and following along the videos.
@@ -55,12 +55,21 @@ if you have troubles setting up the environment and following along the videos.
     -   [Video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
     -   [Companion Notes](1_terraform_gcp)
 -   Workshop: Creating GCP Infrastructure with Terraform
-    -   [Audio](https://drive.google.com/file/d/1IqMRDwJV-m0v9_le_i2HA_UbM_sIWgWx/view?usp=sharing) (Video had technical issues and will be updated soon)
+    -   [Video](https://www.youtube.com/watch?v=dNkEgO-CExg&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
     -   [Workshop](1_terraform_gcp/terraform)
 -   Configuring terraform and GCP SDK on Windows
     -   [Instructions](1_terraform_gcp/windows.md)
 
 ### Environment setup
+
+For the course you'll need:
+
+-   Python 3 (e.g. installed with Anaconda)
+-   Google Cloud SDK
+-   Docker with docker-compose
+-   Terraform
+
+If you have problems setting up the env, you can check this video:
 
 -   [Setting up the environment on cloud VM](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
     -   Generating SSH keys
@@ -87,4 +96,7 @@ Did you take notes? You can share them here
 
 -   [Notes from Alvaro Navas](https://github.com/ziritrion/dataeng-zoomcamp/blob/main/notes/1_intro.md)
 -   [Notes from Abd](https://itnadigital.notion.site/Week-1-Introduction-f18de7e69eb4453594175d0b1334b2f4)
+-   [Notes from Aaron](https://github.com/ABZ-Aaron/DataEngineerZoomCamp/blob/master/week_1_basics_n_setup/README.md)
+-   [Notes from Faisal](https://github.com/FaisalMohd/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/Notes/DE%20Zoomcamp%20Week-1.pdf)
+-   [Michael Harty's Notes](https://github.com/mharty3/data_engineering_zoomcamp_2022/tree/main/week01)
 -   Add your notes here
