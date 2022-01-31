@@ -76,7 +76,7 @@ with DAG(
     default_args=default_args,
     schedule_interval="0 6 2 * *",
     catchup=True,
-    max_active_runs=3,
+    max_active_runs=1,
     tags=['dtc-de'],
 ) as dag:
 
