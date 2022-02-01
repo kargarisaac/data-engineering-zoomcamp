@@ -11,8 +11,8 @@ services:
             interval: 5s
             retries: 5
         restart: always
-        networks:
-            - default
+        # networks:
+        #     - default
 
     scheduler:
         build: .
@@ -29,8 +29,8 @@ services:
             - ./scripts:/opt/airflow/scripts
             - ~/.google/credentials/:/.google/credentials
 
-        networks:
-            - default
+        # networks:
+        #     - default
 
     webserver:
         build: .
@@ -57,13 +57,13 @@ services:
             timeout: 30s
             retries: 3
 
-        networks:
-            - default
+        # networks:
+        #     - default
 
 volumes:
     postgres-db-volume:
 
-networks:
-    default:
-        external:
-            name: my-network
+# networks:
+#     default:
+#         external:
+#             name: my-network

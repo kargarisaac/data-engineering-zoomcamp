@@ -67,7 +67,7 @@ x-airflow-common: &airflow-common
         - ./plugins:/opt/airflow/plugins
         - ~/.google/credentials/:/.google/credentials:ro
 
-    user: "${AIRFLOW_UID:-1000}:0"
+    user: "${AIRFLOW_UID:-1001}:0"
     depends_on: &airflow-common-depends-on
         redis:
             condition: service_healthy
@@ -88,8 +88,8 @@ services:
             interval: 5s
             retries: 5
         restart: always
-        networks:
-            - default
+        # networks:
+        #     - default
 
     redis:
         image: redis:latest
@@ -101,8 +101,8 @@ services:
             timeout: 30s
             retries: 50
         restart: always
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-webserver:
         <<: *airflow-common
@@ -119,8 +119,8 @@ services:
             <<: *airflow-common-depends-on
             airflow-init:
                 condition: service_completed_successfully
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-scheduler:
         <<: *airflow-common
@@ -139,8 +139,8 @@ services:
             <<: *airflow-common-depends-on
             airflow-init:
                 condition: service_completed_successfully
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-worker:
         <<: *airflow-common
@@ -162,8 +162,8 @@ services:
             <<: *airflow-common-depends-on
             airflow-init:
                 condition: service_completed_successfully
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-triggerer:
         <<: *airflow-common
@@ -182,8 +182,8 @@ services:
             <<: *airflow-common-depends-on
             airflow-init:
                 condition: service_completed_successfully
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-init:
         <<: *airflow-common
@@ -261,8 +261,8 @@ services:
         user: "0:0"
         volumes:
             - .:/sources
-        networks:
-            - default
+        # networks:
+        #     - default
 
     airflow-cli:
         <<: *airflow-common
@@ -276,8 +276,8 @@ services:
             - bash
             - -c
             - airflow
-        networks:
-            - default
+        # networks:
+        #     - default
 
     flower:
         <<: *airflow-common
@@ -294,13 +294,13 @@ services:
             <<: *airflow-common-depends-on
             airflow-init:
                 condition: service_completed_successfully
-        networks:
-            - default
+        # networks:
+        #     - default
 
 volumes:
     postgres-db-volume:
 
-networks:
-    default:
-        external:
-            name: airflow_default
+# networks:
+#     default:
+#         external:
+#             name: airflow_default
