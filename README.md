@@ -6,7 +6,7 @@
 - Join the [`#course-data-engineering`](https://app.slack.com/client/T01ATQK62F8/C01FABYF2RG) channel
 - Subscribe to our [public Google Calendar](https://calendar.google.com/calendar/?cid=ZXIxcjA1M3ZlYjJpcXU0dTFmaG02MzVxMG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (it works from Desktop only)
 - The videos are published to [DataTalks.Club's YouTube channel](https://www.youtube.com/c/DataTalksClub) in [the course playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) 
-
+- [Leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vR9oQiYnAVvzL4dagnhvp0sngqagF0AceD0FGjhS-dnzMTBzNQIal3-hOgkTibVQvfuqbQ69b0fvRnf/pubhtml)
 
 ## Syllabus
 
@@ -64,27 +64,13 @@ Goal: Transforming Data in DWH to Analytical Views
 
 Instructor: Victoria
 
-* Basics (15 mins)
-    * What is DBT?
-    * ETL vs ELT 
-    * Data modeling
-    * DBT fit of the tool in the tech stack
-* Usage (Combination of coding + theory) (1:30-1:45 mins)
-    * Anatomy of a dbt model: written code vs compiled Sources
-    * Materialisations: table, view, incremental, ephemeral  
-    * Seeds 
-    * Sources and ref  
-    * Jinja and Macros 
-    * Tests  
-    * Documentation 
-    * Packages 
-    * Deployment: local development vs production 
-    * DBT cloud: scheduler, sources and data catalog (Airflow)
-* Google data studio -> Dashboard
-* Extra knowledge:
-    * DBT cli (local)
+* Basics of analytics engineering (15 mins)
+* Developing a dbt project (Combination of coding + theory) (1:30)
+* Visualising the data in Google data studio (15 mins)
 
 Duration: 2h    
+
+[More details](week_4_analytics_engineering)
 
 
 ### [Week 5: Batch processing](week_5_batch_processing)
@@ -180,6 +166,17 @@ Prior experience with data engineering is not required.
 - Sejal Vaidya (https://linkedin.com/in/vaidyasejal)
 - Victoria Perez Mola (https://www.linkedin.com/in/victoriaperezmola/)
 - Alexey Grigorev (https://linkedin.com/in/agrigorev)
+
+## Tools 
+
+For this course you'll need to have the following software installed on your computer:
+
+* Docker and Docker-Compose
+* Python 3 (e.g. via [Anaconda](https://www.anaconda.com/products/individual))
+* Google Cloud SDK 
+* Terraform
+
+See [Week 1](week_1_basics_n_setup) for more details about installing these tools
 
 
 ## Questions
